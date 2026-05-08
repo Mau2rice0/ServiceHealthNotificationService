@@ -63,10 +63,10 @@ If you wish to use this script in a commercial context or share it publicly, ple
 
 | Variable Name      | Description                                      | Example |
 |--------------------|--------------------------------------------------|---------|
-| `RecipientEmail`   | Email address that receives the alert            | `it-ops@company.com` |
-| `SenderEmail`      | Sender mailbox (must be licensed)                | `m365-monitor@company.com` |
+| `RecipientEmail`   | Email address that receives the alert            | `recipient@company.com` |
+| `SenderEmail`      | Sender mailbox (must be licensed)                | `servicehealth@company.com` |
 
-### 2. Microsoft Graph API Permissions (Delegated via Managed Identity)
+### 2. Microsoft Graph API Permissions
 
 - `ServiceHealth.Read.All`
 - `Mail.Send`
@@ -94,7 +94,7 @@ If you wish to use this script in a commercial context or share it publicly, ple
 ## Files in this Repository
 
 - `README.md` – This documentation file
-- `Monitor-M365ServiceHealth.ps1` – The main PowerShell Runbook script
+- `ServiceHealthNotificationService.ps1` – The main PowerShell Runbook script
 
 ---
 
@@ -105,7 +105,7 @@ If you wish to use this script in a commercial context or share it publicly, ple
 3. Create the two Automation Variables (`RecipientEmail` and `SenderEmail`)
 4. Enable System-assigned Managed Identity and grant the required Graph permissions
 5. Save and **Publish** the runbook
-6. Create a schedule (recommended: every 15–30 minutes)
+6. Create a schedule (recommended: every Hour)
 
 ---
 
