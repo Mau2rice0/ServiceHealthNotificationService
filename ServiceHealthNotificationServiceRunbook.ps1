@@ -4,8 +4,6 @@
     Retrieves Microsoft 365 Service Health and Message Center announcements.
     Sends a detailed HTML report only when one or more services have issues
     (Degradation or Interruption). If all services are operational, no email is sent.
-   
-    
 
 .AUTHOR
     Maurice Flöthmann
