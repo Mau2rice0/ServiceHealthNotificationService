@@ -69,6 +69,7 @@ If you wish to use this script in a commercial context or share it publicly, ple
 ### 2. Microsoft Graph API Permissions
 
 - `ServiceHealth.Read.All`
+- `ServiceMessage.Read.All`
 - `Mail.Send`
 
 ### 3. Azure Automation Account Setup
